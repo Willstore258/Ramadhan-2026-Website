@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Ramadhan 2026</title>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="overlay"></div>
+<header>
+  <div class="brand">Ramadhan 2026</div>
+  <nav class="top-menu">
+    <button class="menu-btn" data-action="quran">Al-Qur'an</button>
+    <button class="menu-btn" data-action="niat-puasa">Niat Puasa</button>
+    <button class="menu-btn" data-action="niat-tarawih">Niat Tarawih</button>
+    <button class="menu-btn" data-action="niat-witir">Niat Witir 1&2 Rakaat</button>
+    <button class="menu-btn" data-action="clock">Jam Digital</button>
+  </nav>
+</header>
+
+<main>
+  <section id="content">
+    <div class="welcome">
+      <h1>Marhaban Ya Ramadhan 2026</h1>
+      <p>Pilih menu di pojok kanan atas untuk melihat isi.</p>
+    </div>
+
+    <div id="quran-section" class="panel hidden">
+      <h2>Daftar 30 Juz</h2>
+      <div class="juz-list" id="juz-list"></div>
+      <div class="ayat-display" id="ayat-display">
+        <h3 id="ayat-title">Pilih Juz</h3>
+        <div id="ayat-content">Ayat akan ditampilkan di sini saat Anda memilih juz. (Contoh/placeholder)</div>
+      </div>
+    </div>
+
+    <div id="niat-section" class="panel hidden">
+      <h2 id="niat-title">Niat</h2>
+      <div id="niat-content" class="niat-content"></div>
+    </div>
+
+    <div id="clock-section" class="panel hidden clock-panel">
+      <div class="clock-display">
+        <div id="clock" class="orbitron"></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div>© Pemuda Nadhatul Ulama 🕊</div>
+</footer>
+
+<!-- Modal for ayaat details -->
+<div id="modal" class="modal hidden">
+  <div class="modal-inner">
+    <button id="close-modal" class="close-btn">×</button>
+    <h3 id="modal-title">Judul</h3>
+    <div id="modal-body">Konten</div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
